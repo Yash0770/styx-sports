@@ -1,26 +1,25 @@
 <html>
     <head>
         <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K3T35LJM');</script>
-    <!-- End Google Tag Manager -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-K3T35LJM');</script>
+        <!-- End Google Tag Manager -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Watch IPL for free</title>
         <style>
-            
             * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
             }
 
             html, body {
-            height: 100%;
-            width: 100%;
-            font-family: Arial, sans-serif;
+                height: 100%;
+                width: 100%;
+                font-family: Arial, sans-serif;
             }
 
             body {
@@ -29,24 +28,14 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 display: flex;
-                /* align-items: center;
-                justify-content: center;
-                text-align: center; */
                 flex-direction: column;
             }
-            .heading-text{
-                color:#fff;
+            
+            .heading-text {
+                color: #fff;
                 font-size: 80px;
                 margin-left: 160px;
-                padding-top:10%;
-            }
-
-             
-            .heading-text-2{
-                color:#fff;
-                font-size: 80px;
-                text-align: right;
-                padding-right:35%;
+                padding-top: 10%;
             }
 
             .page-wrapper {
@@ -55,16 +44,20 @@
                 flex: 1;
             }
 
+            .content-container {
+                flex: 1;
+            }
+
             .private-policy {
                 color: #fff;
                 text-align: center;
-                margin-top: auto;
-                padding-bottom: 20px;
+                padding: 20px 0;
             }
-            .color-white{
-                color:#fff;
+            
+            .color-white {
+                color: #fff;
             }
-            /*  */
+            
             .watch-now-button {
                 background-color: yellow;
                 color: black;
@@ -73,35 +66,58 @@
                 border: none;
                 border-radius: 8px;
                 cursor: pointer;
-                margin-left: 460px;
+                margin-left: 160px;
                 margin-top: 20px;
                 font-weight: bold;
                 transition: background-color 0.3s, transform 0.3s;
             }
 
-            /* .watch-now-button:hover {
-                background-color: #333;
-                transform: scale(1.05);
-            } */
-
-
-            @media screen and (max-width: 768px) {
-                body {
-                    background-image: url('./mobile.png') !important; /* mobile image */
+            /* Tablet Styles */
+            @media screen and (max-width: 1024px) {
+                .heading-text {
+                    font-size: 60px;
+                    color: black;
+                    margin-left: 80px;
                 }
-
-                .heading-text{
-                    font-size: 40px;
-                    padding-top:30%;
-                }
-
-                .heading-text-2{
-                    font-size: 40px;
-                    text-align: right;
+                
+                .watch-now-button {
+                    margin-left: 80px;
+                    padding: 12px 25px;
+                    font-size: 18px;
                 }
             }
-           
-           
+
+            /* Mobile Styles */
+            @media screen and (max-width: 768px) {
+                body {
+                    background-image: url('./mobile.png') !important;
+                }
+
+                .heading-text {
+                    font-size: 36px;
+                    padding-top: 30%;
+                    margin-left: 30px;
+                    text-align: left;
+                }
+                
+                .watch-now-button {
+                    margin-left: 30px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                }
+            }
+
+            /* Small Mobile Devices */
+            @media screen and (max-width: 480px) {
+                .heading-text {
+                    font-size: 32px;
+                    margin-left: 20px;
+                }
+                
+                .watch-now-button {
+                    margin-left: 20px;
+                }
+            }
         </style>
     </head>
     <body>
@@ -110,18 +126,17 @@
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3T35LJM"
                 height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-     <div class="page-wrapper">
-        <div>
-            <h1 class="heading-text">Watch IPL For Free</h1>
-            <button class="watch-now-button">Watch Now</button>
-            <!-- <h1 class="heading-text-2">- Watch Now</h1> -->
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="page-wrapper">
+            <div class="content-container">
+                <h1 class="heading-text">Watch IPL For Free</h1>
+                <button class="watch-now-button">Watch Now</button>
+            </div>
+            <div class="private-policy">
+                <a href="" class="color-white">Private Policy</a>
+            </div>
         </div>
-        <div class="private-policy">
-            <a href="" class="color-white">Private Policy</a>
-        </div>
-    </div>
-    <script>
+        <script>
          setTimeout(function() {
            window.location.href = "https://www.styxsports.com/";
          }, 3000); // 1000 milliseconds = 1 seconds
